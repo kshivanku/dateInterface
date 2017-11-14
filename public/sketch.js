@@ -19,14 +19,14 @@ function gotData(data){
   var users = Object.keys(data);
   if(data.val() != null && count == 1){
     $("h1").html("Your date is going: Terrible");
-    $("body").css("background-color", "#00ffff");
+    $("body").css("background-color", "#ff0000");
     $("body").css("color", "#ffffff");
     count++;
   }
   else if(data.val() != null && count == 2){
     $("h1").html("Save this date by telling a personal story!");
-    $("body").css("background-color", "#0000ff");
-    $("body").css("color", "#ffffff");
+    $("body").css("background-color", "#ffff00");
+    $("body").css("color", "#212121");
     count = 1;
   }
 }
