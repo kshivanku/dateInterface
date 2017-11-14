@@ -18,15 +18,15 @@ function gotData(data){
   console.log(data.val())
   var users = Object.keys(data);
   if(data.val() != null && count == 1){
-    $("h3").html("Your date is going: Terrible");
-    $(document).css("background-color", "#00ffff");
-    $(document).css("color", "#ffffff");
+    $("h1").html("Your date is going: Terrible");
+    $("body").css("background-color", "#00ffff");
+    $("body").css("color", "#ffffff");
     count++;
   }
   else if(data.val() != null && count == 2){
-    $("h3").html("Save this date by telling a personal story!");
-    $(document).css("background-color", "#0000ff");
-    $(document).css("color", "#ffffff");
+    $("h1").html("Save this date by telling a personal story!");
+    $("body").css("background-color", "#0000ff");
+    $("body").css("color", "#ffffff");
     count = 1;
   }
 }
