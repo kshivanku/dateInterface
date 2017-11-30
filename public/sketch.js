@@ -17,10 +17,10 @@ $(document).ready(function(){
   });
 });
 
-socket.on('scriptCues', gotScriptCues);
+socketDates.on('scriptCues', gotScriptCues);
 function gotScriptCues(data) {
-  if (data.intendedFor == profilename) {
-    console.log("do something");
+  if (data.intendedFor.indexOf(profilename) != -1) {
+    console.log(data);
   }
 }
 
