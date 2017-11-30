@@ -12,4 +12,4 @@ var io = socket(server);
 
 io.sockets.on('connection', function(socket) {
   console.log('connected: ' + socket.id);
-}
+});
