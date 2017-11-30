@@ -8,10 +8,12 @@ $(document).ready(function(){
   $("#writer_profile_box").click(function(){
     profilename = "writer";
     loadpage('scriptPage');
+    $("#scriptPage h1").html("Date page for: <span style='font-weight:bold'>" + profilename + "</span>");
     console.log("profilename: " + profilename);
   });
   $("#date_profile_box").click(function(){
     profilename = "date";
+    $("#scriptPage h1").html("Date page for: <span style='font-weight:bold'>" + profilename + "</span>");
     loadpage('scriptPage');
     console.log("profilename: " + profilename);
   });
@@ -20,7 +22,7 @@ $(document).ready(function(){
 socketDates.on('scriptCues', gotScriptCues);
 function gotScriptCues(data) {
   if (data.intendedFor.indexOf(profilename) != -1) {
-    console.log(data);
+
   }
 }
 
