@@ -1,8 +1,66 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  color: #212121;
-  max-width: 960px;
-  margin: 50px auto;
-  padding: 10px 32px;
+    background-color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.padder {
+  padding: 0 16px;
+}
+
+#profileSelectionPage {
+  margin: auto;
   text-align: center;
+  margin-top: 50px;
+}
+
+#writer_profile_box {
+  background-color: #120570;
+}
+#writer_profile_box:hover {
+  background-color: #1f09bc;
+}
+
+#date_profile_box {
+  background-color: #840275;
+}
+#date_profile_box:hover {
+  background-color: #ba03a5;
+}
+
+.profile{
+  background-color: #212121;
+  width: 240px;
+  height: 240px;
+  border-radius: 5px;
+  border: 4px solid #333;
+  display: inline-block;
+  margin: 32px;
+  line-height: 240px;
+  color: white;
+  cursor: pointer;
 }

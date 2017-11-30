@@ -1,21 +1,28 @@
-<!--
-CHANGES WRT CHAT INTERFACES NEED TO BE MADE
--->
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Date Interface</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     <script type="text/javascript" src="sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Date Interface</h1>
-    <!-- <h3></h3> -->
-    <!-- <h3>Next Conevrsation Topic</h3> -->
+    <div id="profileSelectionPage" class= "padder">
+      <h1>Select a profile</h1>
+      <div class="profile" id="writer_profile_box">
+        <h2>Writer</h2>
+      </div>
+      <div class="profile" id="date_profile_box">
+        <h2>Date</h2>
+      </div>
+    </div>
+    <div id="scriptPage" class = "padder">
+      <h1>Please wait for instructions</h1>
+    </div>
   </body>
 </html>
