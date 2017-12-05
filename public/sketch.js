@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("#writer_profile_box").click(function() {
         profilename = "writer";
         loadpage('scriptPage');
-        $("#scriptPage h1").html("Date page for: <span style='font-weight:bold'>" + profilename + "</span>");
+        $("#scriptPage h2").html("Date page for: <span style='font-weight:bold'>" + profilename + "</span>");
         console.log("profilename: " + profilename);
     });
     $("#date_profile_box").click(function() {
