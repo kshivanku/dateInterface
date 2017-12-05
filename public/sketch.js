@@ -24,7 +24,7 @@ function gotScriptCues(data) {
     if (data.intendedFor.indexOf(profilename) != -1) {
         $("#topics").empty();
         var topic = data.message.split(": ")[1];
-        var topicDiv = `<h2>Talk about ` + topic + `</h2>`;
+        var topicDiv = `<h1>Talk about ` + topic + `</h1>`;
         $("#topics").append(topicDiv);
     }
 }
