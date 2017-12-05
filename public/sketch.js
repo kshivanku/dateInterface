@@ -13,7 +13,7 @@ $(document).ready(function() {
     });
     $("#date_profile_box").click(function() {
         profilename = "date";
-        $("#scriptPage h1").html("Date page for: <span style='font-weight:bold'>" + profilename + "</span>");
+        $("#scriptPage h2").html("Date page for: <span style='font-weight:bold'>" + profilename + "</span>");
         loadpage('scriptPage');
         console.log("profilename: " + profilename);
     });
